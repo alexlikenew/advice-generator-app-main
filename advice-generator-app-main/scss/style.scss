@@ -1,0 +1,130 @@
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body, main , section {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans';
+	font-size: 1.6rem;
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper{
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.advice-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 0 2rem;
+    max-width: 90%;
+    border-radius: 1rem;
+    background-color:hsl(217, 19%, 38%);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    
+    &__header{
+        margin-top: 2rem;
+        text-align: center;
+        color: hsl(150, 100%, 66%);
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    &__text{
+        margin-top: 2rem;
+        color:hsl(193, 38%, 86%);
+        text-align: center;
+    }
+    &__img{
+        display: flex;
+        margin-top: 2rem;
+        position: relative;
+        &::after , ::before{
+            position: relative;
+            display: flex;
+            width: 5rem;
+            height: 2px;
+            background-color: hsl(193, 38%, 86%);
+            content: '';
+            z-index: 1000;
+        }
+    }
+    &__btn{
+       
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(150, 100%, 66%);
+        border-radius: 50%;
+       transform: translateY(50%);
+       
+    }
+
+}
+
+@media only screen and (min-width :992px) {
+    .advice-box{
+        max-width: 40%;
+    }
+}
