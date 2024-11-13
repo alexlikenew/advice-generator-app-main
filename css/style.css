@@ -21,7 +21,7 @@ body, main, section {
   height: 100vh;
   font-family: "Open Sans";
   font-size: 1.6rem;
-  background-color: hsl(217, 19%, 24%);
+  background-color: hsl(218, 23%, 16%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +77,7 @@ table {
   padding: 2rem 2rem 0 2rem;
   max-width: 90%;
   border-radius: 1rem;
-  background-color: hsl(217, 19%, 38%);
+  background-color: hsl(217, 19%, 24%);
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -99,17 +99,6 @@ table {
   display: flex;
   margin-top: 2rem;
   position: relative;
-  z-index: 1;
-}
-.advice-box__img::after, .advice-box__img ::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5rem;
-  height: 2px;
-  background-color: hsl(193, 38%, 86%);
-  content: "";
-  z-index: 1000;
 }
 .advice-box__btn {
   width: 6rem;
@@ -127,6 +116,6 @@ table {
 
 @media only screen and (min-width: 992px) {
   .advice-box {
-    max-width: 40%;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
